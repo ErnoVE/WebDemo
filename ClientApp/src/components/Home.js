@@ -31,6 +31,10 @@ export class Home extends Component {
 
     console.log("Render-metodisssa.");
 
+    const luvut = this.state.luvut.map((luku) =>
+      <li>{luku}</li>
+    );
+
     return (
       <div>
         <h1>Janin Oma Web-Demo!</h1>
@@ -38,7 +42,9 @@ export class Home extends Component {
         <div className="alert alert-success" role="alert">
           A simple success alert—check it out!
         </div>
-        <p>{this.state.luvut}</p>
+        <ul style={{fontSize: 30}}>
+          {luvut}
+        </ul>
       </div>
     );
   }
