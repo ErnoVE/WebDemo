@@ -8,9 +8,20 @@ using WebDemoTurku.Models;
 
 namespace WebDemoTurku.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")]    // --> "/api/customer"
     public class CustomerController : Controller
     {
+
+        [Route("moikka")]    // --> "/api/customer/moikka"
+        public string GetMoi() {
+            return "Moikka!";
+        }
+
+        [Route("luvut")]     // --> "/api/customer/luvut"
+        public int[] GetLuvut() {
+            return new int[] { 1,2,3,4,5 };
+        }
+
         
         public List<Customers> GetCustomers()
         {
