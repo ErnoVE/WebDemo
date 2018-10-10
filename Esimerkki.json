@@ -1,0 +1,32 @@
+[
+    {
+        "customerId": "WILMK",
+        "companyName": "Wilman Kala",
+        "contactName": "Matti Karttunen",
+        "contactTitle": "Owner/Marketing Assistant",
+        "address": "Keskuskatu 45",
+        "city": "Helsinki",
+        "region": null,
+        "postalCode": "21240",
+        "country": "Finland",
+        "phone": "90-224 8858",
+        "fax": "90-224 8858",
+        "customerCustomerDemo": [],
+        "orders": []
+    },
+    {
+        "customerId": "WARTH",
+        "companyName": "Wartian Herkku",
+        "contactName": "Pirkko Koskitalo",
+        "contactTitle": "Accounting Manager",
+        "address": "Torikatu 38",
+        "city": "Oulu",
+        "region": null,
+        "postalCode": "90110",
+        "country": "Finland",
+        "phone": "981-443655",
+        "fax": "981-443655",
+        "customerCustomerDemo": [],
+        "orders": []
+    }
+]
