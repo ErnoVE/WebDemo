@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import './tyyli.css';
 
 export class Home extends Component {
   displayName = Home.name
@@ -37,12 +38,12 @@ export class Home extends Component {
 
     return (
       <div>
-        <h1>Janin Oma Web-Demo!</h1>
+        <h1>Web Demoni</h1>
         <p>Tervetuloa!</p>
         <div className="alert alert-success" role="alert">
           A simple success alert—check it out!
         </div>
-        <ul style={{fontSize: 30}}>
+        <ul style={{fontSize: 10}}>
           {luvut}
         </ul>
       </div>
