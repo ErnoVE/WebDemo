@@ -16,7 +16,7 @@ export class Customer extends Component {
 
   static renderCustomerTable(Customer) {
     return (
-      <table className='table'>
+      <table className='table className="table table-striped'>
         <thead>
           <tr>
             <th>Customer ID</th>
