@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 
-export class FetchData extends Component {
-  displayName = FetchData.name
+export class Customer extends Component {
+  displayName = Customer.name
 
   constructor(props) {
     super(props);
-    this.state = { customers: [], loading: true };
+    this.state = { Customer: [], loading: true };
 
     fetch('api/Customer')
       .then(response => response.json())
       .then(data => {
-        this.setState({ customers: data, loading: false });
+        this.setState({ Customer: data, loading: false });
       });
   }
 
-  static renderCustomerTable(customers) {
+  static renderCustomerTable(Customer) {
     return (
       <table className='table'>
         <thead>
@@ -28,14 +28,14 @@ export class FetchData extends Component {
           </tr>
         </thead>
         <tbody>
-          {customers.map(customers =>
-            <tr key={customers.CustomerID}>
-              <td>{customers.CustomerID}</td>
-              <td>{customers.CompanyName}</td>
-              <td>{customers.ContactName}</td>
-              <td>{customers.ContactTitle}</td>
-              <td>{customers.Phone}</td>
-              <td>{customers.Country}</td>
+          {Customer.map(Customers =>
+            <tr key={Customers.customerId}>
+              <td>{Customers.customerId}</td>
+              <td>{Customers.companyName}</td>
+              <td>{Customers.contactName}</td>
+              <td>{Customers.contactTitle}</td>
+              <td>{Customers.phone}</td>
+              <td>{Customers.country}</td>
             </tr>
           )}
         </tbody>
@@ -46,7 +46,7 @@ export class FetchData extends Component {
   render() {
     let contents = this.state.loading
       ? <p><em>Loading...</em></p>
-      : FetchData.renderCustomerTable(this.state.customers);
+      : Customer.renderCustomerTable(this.state.Customer);
 
     return (
       <div>
