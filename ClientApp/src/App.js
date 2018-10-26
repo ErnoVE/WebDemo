@@ -4,7 +4,7 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
-import { Customer } from './components/Customer';
+import { Client } from './components/Client';
 // import './App.css';
 
 export default class App extends Component {
@@ -16,7 +16,7 @@ export default class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/fetchdata' component={FetchData} />
-        <Route parth='/Customer' component={Customer} />
+        <Route parth='/Client' component={Client} />
         
       </Layout>
     );
