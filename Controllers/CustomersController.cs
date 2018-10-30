@@ -10,8 +10,6 @@ namespace WebDemoTurku.Controllers
     [Route("api/[controller]")]    // --> "/api/customer"
     public class CustomerController : Controller
     {
-
-
         [Route("luvut")]     // --> "/api/customer/luvut"
         public int[] GetLuvut()
         {
